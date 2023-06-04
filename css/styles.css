@@ -115,8 +115,8 @@ img {
 /*----------HEADER----------*/
 .header {
   background: #ffffff;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -184,20 +184,21 @@ img {
 }
 
 .header-link {
-  /* padding-top: 24px;
+  display: block;
+  padding-top: 24px;
   padding-bottom: 24px;
   position: relative;
-  color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-  display: block;
 
-  color: var(--color-primary);
   font-weight: 500;
 
   line-height: 1.5;
   letter-spacing: 0.02em;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-line {
+  color: #404bbf;
 }
 
 /* .header-link::after {
@@ -217,7 +218,8 @@ img {
   bottom: -1px;
   width: 100%;
   height: 4px;
-  background-color: var(--color-active);
+
+  background-color: #404bbf;
   border-radius: 2px;
 }
 
